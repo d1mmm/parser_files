@@ -51,14 +51,11 @@ def write_to_csv_file(dictionary: dict, output_path: str):
         for item in dictionary.items():
             spamwriter.writerow(item)
 
-    csv_file.close()
-
 
 def write_to_json_file(dictionary: dict, output_path: str):
     json_object = json.dumps(dictionary, indent=4)
     with open(f"{output_path}/output_file.json", "w") as json_file:
         json_file.write(json_object)
-    json_file.close()
 
 
 def create_dict(match_all: list, path_files: str, dictionary: dict):

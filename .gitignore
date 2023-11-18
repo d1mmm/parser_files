@@ -160,3 +160,5 @@ cython_debug/
 #.idea/
 /tokens_files/
 /output_files/
+/input/
+/uploads/
